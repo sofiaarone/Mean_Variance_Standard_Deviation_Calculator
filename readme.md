@@ -31,3 +31,34 @@ For each measure, it provides:
     ```pip install numpy```
 
 3. Clone or download this repository.
+
+---
+
+## Usage
+
+1. Open main.py
+2. Run the program: 
+
+    ```python main.py```
+
+---
+
+## Project structure
+
+```
+calculator_project/
+├── main.py          # Program entry point
+├── mean_var_std.py  # Module containing the calculation function
+└── README.md        # Documentation file
+``` 
+---
+
+## Author
+
+Sofia Arone - Student at Inteli
+
+---
+
+## License
+
+This project is for educational purposes.
