@@ -51,6 +51,8 @@ calculator_project/
 ├── mean_var_std.py  # Module containing the calculation function
 ├── README.md        # Documentation file
 └── test_module.py   # Automatic tests using unittest
+```
+
 ---
 
 ## Author
