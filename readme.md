@@ -49,8 +49,8 @@ For each measure, it provides:
 calculator_project/
 ├── main.py          # Program entry point
 ├── mean_var_std.py  # Module containing the calculation function
-└── README.md        # Documentation file
-``` 
+├── README.md        # Documentation file
+└── test_module.py   # Automatic tests using unittest
 ---
 
 ## Author
