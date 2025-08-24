@@ -63,4 +63,5 @@ Sofia Arone - Student at Inteli
 
 ## License
 
-This project is for educational purposes.
+License
+This project is intended for educational purposes only.

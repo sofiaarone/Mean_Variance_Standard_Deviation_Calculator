@@ -1,9 +1,11 @@
 import unittest
 from mean_var_std import calculate
 
+# testing the calculate function with different cases
 class TestMeanVarStd(unittest.TestCase):
 
     def test_calculate_1(self):
+         # first test with the list [2,6,2,8,4,0,1,5,7]
         numbers = [2, 6, 2, 8, 4, 0, 1, 5, 7]
         actual = calculate(numbers)
         expected = {
@@ -20,10 +22,12 @@ class TestMeanVarStd(unittest.TestCase):
             'min': [[1, 4, 0], [2, 0, 1], 0],
             'sum': [[11, 15, 9], [10, 12, 13], 35]
         }
+        # checking if the actual result matches the expected one
         self.assertAlmostEqual(actual, expected, 
-            "O resultado não bate com o esperado para a lista [2,6,2,8,4,0,1,5,7]")
+            "The result does not match the expected output for the list [2,6,2,8,4,0,1,5,7]")
 
     def test_calculate_2(self):
+        # second test with the list [9,1,5,3,3,3,2,9,0]
         numbers = [9, 1, 5, 3, 3, 3, 2, 9, 0]
         actual = calculate(numbers)
         expected = {
@@ -40,10 +44,12 @@ class TestMeanVarStd(unittest.TestCase):
             'min': [[2, 1, 0], [1, 3, 0], 0],
             'sum': [[14, 13, 8], [15, 9, 11], 35]
         }
+        # checking if the actual result matches the expected one
         self.assertAlmostEqual(actual, expected, 
-            "O resultado não bate com o esperado para a lista [9,1,5,3,3,3,2,9,0]")
+            "The result does not match the expected output for the list [9,1,5,3,3,3,2,9,0]")
 
     def test_calculate_with_few_digits(self):
+         # test when the list does not have 9 numbers
         with self.assertRaisesRegex(ValueError, "List must contain nine numbers."):
             calculate([2, 6, 2, 8, 4, 0, 1]) 
 
